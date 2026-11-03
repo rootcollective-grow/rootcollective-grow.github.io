@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grow lettuce in a jar · The Root Collective Project</title>
+  <meta name="description" content="A beginner's guide to growing lettuce in a glass jar with the Kratky method. No pumps, no power, just a few dollars of supplies.">
+  <!-- Free fonts from Google: Fraunces (headings) and Inter (body text) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap">
+  <!-- SHARE: link previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Root Collective">
+  <meta property="og:title" content="Grow lettuce in a jar · The Root Collective Project">
+  <meta property="og:description" content="A beginner&#x27;s guide to growing lettuce in a glass jar with the Kratky method. No pumps, no power, just a few dollars of supplies.">
+  <meta property="og:url" content="https://rootcollective-grow.github.io/water-jars.html">
+  <meta property="og:image" content="https://rootcollective-grow.github.io/images/hero-jar.jpg">
+  <meta property="og:image:alt" content="Grow lettuce in a jar · The Root Collective Project">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://rootcollective-grow.github.io/water-jars.html">
+  <!-- /SHARE -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">
+      <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 18 C16 10 10 6 4 6 C4 13 9 18 16 18 Z" fill="currentColor"/>
+        <path d="M16 18 C16 11 21 7 28 7 C28 14 23 18 16 18 Z" fill="currentColor" opacity="0.6"/>
+        <path d="M16 18 V26 M16 26 L12 30 M16 26 L20 30 M16 24 L13 26" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span>The Root Collective</span>
+    </a>
+    <nav aria-label="Main">
+      <details class="nav-guides">
+        <summary class="is-current">Guides</summary>
+        <div class="nav-menu">
+          <p class="nav-menu-title">Ways to grow</p>
+          <a href="water-jars.html" aria-current="page">Water jars</a>
+          <a href="microgreens.html">Microgreens</a>
+          <a href="soil.html">Pots of soil</a>
+          <a href="bubble-bucket.html">Bubble buckets</a>
+          <p class="nav-menu-title">The basics</p>
+          <a href="seed-starting.html">Starting seeds</a>
+          <a href="lighting.html">Light</a>
+          <a href="ph.html">pH</a>
+          <a href="plant-food.html">Plant food</a>
+          <p class="nav-menu-title">Tools</p>
+          <a href="savings.html">Savings calculator</a>
+          <a href="planner.html">Planting planner</a>
+        </div>
+      </details>
+      <a href="start-here.html">Start here</a>
+      <a href="community.html">Community</a>
+      <a class="nav-join" href="index.html#join">Join</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero hero-small hero-with-art">
+      <div class="hero-text">
+        <p class="eyebrow">Beginner guide · Water jars</p>
+        <h1>Grow lettuce in a <em>jar.</em></h1>
+        <p class="hero-lead">Your first indoor harvest, with no pumps, no power, and no experience needed. Most of what you need costs a few dollars, and some of it is already in your kitchen.</p>
+      </div>
+      <div class="hero-plate">
+        <img class="hero-photo" src="images/hero-jar.jpg" width="1000" height="1000" alt="A butterhead lettuce growing from a net cup in a glass jar of water, with its roots hanging down into the water">
+      </div>
+    </section>
+
+    <!-- What Kratky is, in plain words -->
+    <section class="section narrow">
+      <p class="eyebrow"><span class="eyebrow-num">01</span> The idea</p>
+      <h2>How it works</h2>
+      <p>This is called the <strong>Kratky method</strong>, named after Dr. Bernard Kratky, the scientist who came up with it. It's a type of <strong>hydroponics</strong>, which just means growing plants in water with plant food mixed in, instead of in soil.</p>
+      <p>The plant sits in a small cup in the jar's lid, with its roots hanging down into the water. As the plant drinks, the water level slowly drops. That leaves a gap of air at the top of the jar, and the roots in that gap take in the air they need. So you set it up once, and the plant mostly looks after itself.</p>
+      <p>Drag the slider to see what a jar looks like from seed to harvest.</p>
+      <!-- "Watch it grow" slider (moving parts in script.js) -->
+      <div class="grow-demo grow-demo-page" data-grow="jar">
+        <p class="grow-title">Watch it grow</p>
+        <img class="grow-photo" src="images/grow-week0.jpg" width="800" height="1000" alt="">
+        <label for="grow-jar" class="grow-label"><span class="grow-step"></span></label>
+        <input type="range" id="grow-jar" class="grow-range" min="0" max="6" step="1" value="0">
+        <p class="grow-text" aria-live="polite"></p>
+        <p class="grow-note">Times are rough and change with light and temperature.</p>
+      </div>
+      <aside class="before-box" aria-label="Before you start">
+        <p class="before-title">Before you start</p>
+        <p>This guide uses a few basic skills. If they're new to you, read these first:</p>
+        <ul>
+          <li><a href="seed-starting.html">Starting seeds</a><span>Most greens sprout in about 3 to 7 days. Move the seedling once it has 2 to 4 true leaves and roots poking out of the cube.</span></li>
+          <li><a href="ph.html">pH made simple</a><span>Aim for 5.5 to 6.5. Pale or yellow leaves, even after feeding, are a sign to check it.</span></li>
+          <li><a href="lighting.html">Light made simple</a><span>Lettuce wants 12 to 16 hours a day. Tall, floppy seedlings mean they need more.</span></li>
+          <li><a href="plant-food.html">Plant food made simple</a><span>Use hydroponic nutrients at the label amount for leafy greens. Brown, crispy tips mean it's too strong.</span></li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- Shopping list with tick boxes -->
+    <section class="section section-tinted">
+      <p class="eyebrow"><span class="eyebrow-num">02</span> Shopping list</p>
+      <h2>What you need</h2>
+      <p>Tick things off as you gather them. For each item there's a cheap do-it-yourself option and a ready-made one.</p>
+      <ul class="supply-list">
+        <li>
+          <label><input type="checkbox"> <strong>A jar</strong></label>
+          <p>A 1 litre (1 quart) wide-mouth glass jar, like a mason jar. <span class="diy">DIY:</span> any clean jar or a large yogurt tub.</p>
+        </li>
+        <li>
+          <label><input type="checkbox"> <strong>Something to block light</strong></label>
+          <p>Light in the water grows algae (green slime). <span class="diy">DIY:</span> wrap the jar in paper, tin foil, or an old sock, or paint the outside. Leave a thin strip so you can peek at the water level.</p>
+        </li>
+        <li>
+          <label><input type="checkbox"> <strong>A net cup</strong></label>
+          <p>A small plastic pot full of holes that sits in the jar's opening. A 5 to 7.5 cm (2 to 3 inch) cup fits most wide-mouth jars. <span class="diy">DIY:</span> poke lots of holes in a plastic cup and cut a hole in the lid to hold it.</p>
+        </li>
+        <li>
+          <label><input type="checkbox"> <strong>A growing cube</strong></label>
+          <p>Something for the seed to sit in, like a rockwool or coco coir cube (sold at garden and hydroponic shops). Clay pebbles can fill the cup around it to hold it steady.</p>
+        </li>
+        <li>
+          <label><input type="checkbox"> <strong>Lettuce seeds</strong></label>
+          <p>Loose-leaf or butterhead types are easiest, such as Black Seeded Simpson, Buttercrunch, or a salad mix. Once you've got the hang of it, jars also work well for bok choy, kale, basil, mint, parsley, and green onions.</p>
+        </li>
+        <li>
+          <label><input type="checkbox"> <strong>Hydroponic plant food</strong></label>
+          <p>Called "hydroponic nutrients". Regular garden fertiliser isn't the same, because hydroponic food contains everything the plant would normally get from soil. Look for one made for leafy greens and follow the label's amounts.</p>
+        </li>
+        <li>
+          <label><input type="checkbox"> <strong>Light</strong></label>
+          <p>A bright, sunny window can work in spring and summer. In winter, a small LED grow light makes a big difference.</p>
+        </li>
+        <li>
+          <label><input type="checkbox"> <strong>pH test kit (optional, but helpful)</strong></label>
+          <p>pH measures how acidic or alkaline the water is (our <a href="ph.html">pH guide</a> explains it). Test drops are cheapest; a digital pen is easier to read.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Step-by-step instructions -->
+    <section class="section narrow">
+      <p class="eyebrow"><span class="eyebrow-num">03</span> Method</p>
+      <h2>Step by step</h2>
+      <ol class="steps">
+        <li>
+          <h3>Sprout your seed</h3>
+          <p>Soak the growing cube in plain water, squeeze out a little, and press 2 or 3 seeds onto the top. Keep it damp and somewhere warm and bright. Sprouts usually appear in 3 to 7 days. When they do, snip off all but the strongest one. New to seeds? Our <a href="seed-starting.html">seed-starting guide</a> walks you through it.</p>
+          <p style="margin-top: 0.75em">Shortcut: you can also skip this step and put the cube straight into the jar (steps 2 to 4). The water touching the bottom of the cup keeps it damp while the seed sprouts. That's the version shown in the slider above.</p>
+        </li>
+        <li>
+          <h3>Mix the plant food</h3>
+          <p>Fill the jar with water and add hydroponic nutrients, using the amount on the label for leafy greens or lettuce. Stir well. New to this? Our <a href="plant-food.html">plant food guide</a> explains how to mix it. Room-temperature tap water is usually fine.</p>
+        </li>
+        <li>
+          <h3>Check the pH (if you have a kit)</h3>
+          <p>Lettuce grows best with a pH between 5.5 and 6.5. If it's higher, add a few drops of "pH down" (sold beside the nutrients), stir, and test again. Our <a href="ph.html">pH guide</a> explains it all.</p>
+        </li>
+        <li>
+          <h3>Set up the jar</h3>
+          <p>Put the cube with your seedling into the net cup and set the cup into the lid. Adjust the water so it just touches the bottom 1 cm (½ inch) of the cup. Cover the jar to block light.</p>
+        </li>
+        <li>
+          <h3>Give it light</h3>
+          <p>Lettuce likes about 12 to 16 hours of light a day and cool rooms, around 15 to 21°C (60 to 70°F). Too hot, and it can turn bitter or try to flower early.</p>
+        </li>
+        <li>
+          <h3>Let the water drop</h3>
+          <p>Don't keep topping it up to the top. The air gap is what lets the roots breathe. If the jar gets low (about a quarter full) before harvest, add a little more nutrient water, but only enough to fill it about halfway.</p>
+        </li>
+        <li>
+          <h3>Harvest!</h3>
+          <p>You can usually start picking outer leaves about 5 to 6 weeks after planting the seed. Pick a few at a time and the centre keeps growing. A full head takes a week or two longer.</p>
+        </li>
+      </ol>
+      <p class="grow-note">Times are rough and change with your light, temperature, and lettuce type.</p>
+    </section>
+
+    <!-- Common problems -->
+    <section class="section section-tinted">
+      <p class="eyebrow"><span class="eyebrow-num">04</span> Troubleshooting</p>
+      <h2>If something looks wrong</h2>
+      <dl class="problems">
+        <dt>Tall, floppy seedlings</dt>
+        <dd>They're stretching for light. Move them closer to the window or grow light.</dd>
+        <dt>Green slime in the water</dt>
+        <dd>That's algae from light getting in. Cover the jar better.</dd>
+        <dt>Brown, slimy, smelly roots</dt>
+        <dd>The roots aren't getting enough air, often because the water is too warm or was filled too high. Keep the jar cooler and leave that air gap.</dd>
+        <dt>Bitter leaves, or a tall stalk in the middle</dt>
+        <dd>The lettuce is "bolting" (trying to flower) because it's too warm. Harvest what you can and try a cooler spot next time.</dd>
+        <dt>Pale or yellow leaves</dt>
+        <dd>The plant may be hungry. Check you used the full label amount of nutrients, and check the pH if you can.</dd>
+      </dl>
+    </section>
+
+    <section class="section section-join">
+      <h2>Share your first jar</h2>
+      <p>Join the Root Collective to swap tips, ask questions, and show off your harvest.</p>
+      <a class="button" href="index.html#join">Join us, it's free <span aria-hidden="true">→</span></a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-name">The Root Collective Project</p>
+    <p>Learn to grow food indoors, together.</p>
+    <p>Questions? <a class="footer-link" href="mailto:rootcollective.grow@gmail.com">rootcollective.grow@gmail.com</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="animations.js"></script>
+  <!-- Start each page at the top (helps when the site is shown inside a preview frame) -->
+  <script>if (!location.hash) { document.body.scrollIntoView({ block: 'start', behavior: 'instant' }); }</script>
+</body>
+</html>

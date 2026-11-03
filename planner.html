@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planting planner · The Root Collective Project</title>
+  <meta name="description" content="Plan when to start seeds so you always have something ready to harvest. Pick a plant, how you grow it and how often you want a harvest, then print or save your schedule.">
+  <!-- Free fonts from Google: Fraunces (headings) and Inter (body text) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap">
+  <!-- SHARE: link previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Root Collective">
+  <meta property="og:title" content="Planting planner · The Root Collective Project">
+  <meta property="og:description" content="Plan when to start seeds so you always have something ready to harvest. Pick a plant, how you grow it and how often you want a harvest, then print or save your schedule.">
+  <meta property="og:url" content="https://rootcollective-grow.github.io/planner.html">
+  <meta property="og:image" content="https://rootcollective-grow.github.io/images/hero-seeds.jpg">
+  <meta property="og:image:alt" content="Planting planner · The Root Collective Project">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://rootcollective-grow.github.io/planner.html">
+  <!-- /SHARE -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">
+      <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 18 C16 10 10 6 4 6 C4 13 9 18 16 18 Z" fill="currentColor"/>
+        <path d="M16 18 C16 11 21 7 28 7 C28 14 23 18 16 18 Z" fill="currentColor" opacity="0.6"/>
+        <path d="M16 18 V26 M16 26 L12 30 M16 26 L20 30 M16 24 L13 26" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span>The Root Collective</span>
+    </a>
+    <nav aria-label="Main">
+      <details class="nav-guides">
+        <summary>Guides</summary>
+        <div class="nav-menu">
+          <p class="nav-menu-title">Ways to grow</p>
+          <a href="water-jars.html">Water jars</a>
+          <a href="microgreens.html">Microgreens</a>
+          <a href="soil.html">Pots of soil</a>
+          <a href="bubble-bucket.html">Bubble buckets</a>
+          <p class="nav-menu-title">The basics</p>
+          <a href="seed-starting.html">Starting seeds</a>
+          <a href="lighting.html">Light</a>
+          <a href="ph.html">pH</a>
+          <a href="plant-food.html">Plant food</a>
+          <p class="nav-menu-title">Tools</p>
+          <a href="savings.html">Savings calculator</a>
+          <a href="planner.html" aria-current="page">Planting planner</a>
+        </div>
+      </details>
+      <a href="start-here.html">Start here</a>
+      <a href="community.html">Community</a>
+      <a class="nav-join" href="index.html#join">Join</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero hero-small">
+      <div class="hero-text">
+        <p class="eyebrow">Tool · Planting planner</p>
+        <h1>Never run out of <em>greens.</em></h1>
+        <p class="hero-lead">Start a few seeds at a time instead of all at once, and something is always ready to harvest. Tell us what you're growing and how often you want a harvest, and we'll make you a schedule to print or save.</p>
+      </div>
+    </section>
+
+    <section class="section calc-section plan-section">
+      <div class="calc-grid plan-grid">
+        <div class="calc-card plan-form">
+          <div class="calc-step">
+            <label class="calc-q" for="crop"><span>1</span> What are you growing?</label>
+            <input id="crop" list="cropList" value="Lettuce" placeholder="For example: lettuce, spinach, microgreens" autocomplete="off">
+            <datalist id="cropList">
+              <option value="Lettuce"><option value="Spinach"><option value="Kale"><option value="Bok choy">
+              <option value="Basil"><option value="Cilantro"><option value="Green onions"><option value="Microgreens">
+            </datalist>
+          </div>
+          <div class="calc-step">
+            <p class="calc-q" id="mLabel"><span>2</span> How will you grow it?</p>
+            <div class="calc-crops" role="group" aria-labelledby="mLabel">
+              <button type="button" data-m="jar" aria-pressed="true">Water jar</button>
+              <button type="button" data-m="soil" aria-pressed="false">Pot of soil</button>
+              <button type="button" data-m="bucket" aria-pressed="false">Bubble bucket</button>
+              <button type="button" data-m="tray" aria-pressed="false">Microgreens tray</button>
+            </div>
+          </div>
+          <div class="calc-step">
+            <label class="calc-q" for="every"><span>3</span> How often do you want a harvest?</label>
+            <select id="every">
+              <option value="1" selected>Every week</option>
+              <option value="2">Every 2 weeks</option>
+              <option value="3">Every 3 weeks</option>
+              <option value="4">Every 4 weeks</option>
+            </select>
+          </div>
+          <div class="calc-step">
+            <label class="calc-q" for="start"><span>4</span> When do you want to start?</label>
+            <input id="start" type="date">
+          </div>
+
+          <p class="calc-group">Rough timing</p>
+          <p class="calc-sub" id="timingNote"></p>
+          <div class="calc-field"><label for="sd">Weeks as a seedling<small>in a seed starter, before it moves in. 0 if you sow straight into it.</small></label><input id="sd" type="number" min="0" step="0.5" inputmode="decimal"></div>
+          <div class="calc-field"><label for="g">Weeks in the <span class="mname">jar</span> until harvest</label><input id="g" type="number" min="0.5" step="0.5" inputmode="decimal"></div>
+          <div class="calc-field"><label for="weeks">Plan for</label>
+            <select id="weeks"><option value="8">8 weeks</option><option value="12" selected>12 weeks</option><option value="16">16 weeks</option><option value="26">6 months</option></select></div>
+        </div>
+
+        <div class="plan-out">
+          <p class="plan-print-title" id="printTitle"></p>
+          <div class="calc-stats plan-summary">
+            <div class="calc-stat"><b id="needSetups"></b><span id="needSetupsLabel"></span></div>
+            <div class="calc-stat"><b id="sowEvery"></b><span>start a new batch of seeds</span></div>
+            <div class="calc-stat"><b id="firstHarvest"></b><span>first harvest</span></div>
+            <div class="calc-stat"><b id="harvestCount"></b><span id="harvestCountLabel">harvests in your plan</span></div>
+          </div>
+          <p class="calc-match" id="cropNote"></p>
+
+          <div class="plan-chart" id="chart" aria-hidden="true"></div>
+          <div class="plan-legend" aria-hidden="true"><span class="lg-seed"></span> Seedling <span class="lg-grow"></span> Growing <span class="lg-harvest"></span> Harvest</div>
+
+          <h2 class="plan-title">Your schedule</h2>
+          <ol class="plan-list" id="list"></ol>
+
+          <div class="plan-actions">
+            <button type="button" class="button" id="printBtn">Print or save as PDF</button>
+            <button type="button" class="button button-ghost" id="icsBtn">Add to my calendar</button>
+          </div>
+          <p class="grow-note">Timings are rough. Warmth, light and the variety you pick all change them, so check your plants and adjust. "Add to my calendar" downloads a file your phone or computer calendar can open.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section narrow">
+      <aside class="before-box" aria-label="Where next">
+        <p class="before-title">Before you start</p>
+        <ul>
+          <li><a href="seed-starting.html">Starting seeds</a><span>How to sow and look after seedlings.</span></li>
+          <li><a href="savings.html">Savings calculator</a><span>See roughly what growing it saves you.</span></li>
+        </ul>
+      </aside>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-name">The Root Collective Project</p>
+    <p>Learn to grow food indoors, together.</p>
+    <p>Questions? <a class="footer-link" href="mailto:rootcollective.grow@gmail.com">rootcollective.grow@gmail.com</a></p>
+  </footer>
+
+  <script src="animations.js"></script>
+  <script src="planner.js"></script>
+  <!-- Start each page at the top (helps when the site is shown inside a preview frame) -->
+  <script>if (!location.hash) { document.body.scrollIntoView({ block: 'start', behavior: 'instant' }); }</script>
+</body>
+</html>

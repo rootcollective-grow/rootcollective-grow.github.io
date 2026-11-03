@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Savings calculator · The Root Collective Project</title>
+  <meta name="description" content="Compare what you pay at the store with what it costs to grow lettuce, microgreens or basil at home. Put in your own prices and see a rough yearly saving.">
+  <!-- Free fonts from Google: Fraunces (headings) and Inter (body text) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap">
+  <!-- SHARE: link previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Root Collective">
+  <meta property="og:title" content="Savings calculator · The Root Collective Project">
+  <meta property="og:description" content="Compare what you pay at the store with what it costs to grow lettuce, microgreens or basil at home. Put in your own prices and see a rough yearly saving.">
+  <meta property="og:url" content="https://rootcollective-grow.github.io/savings.html">
+  <meta property="og:image" content="https://rootcollective-grow.github.io/images/hero-ways-to-grow.jpg">
+  <meta property="og:image:alt" content="Savings calculator · The Root Collective Project">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://rootcollective-grow.github.io/savings.html">
+  <!-- /SHARE -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">
+      <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 18 C16 10 10 6 4 6 C4 13 9 18 16 18 Z" fill="currentColor"/>
+        <path d="M16 18 C16 11 21 7 28 7 C28 14 23 18 16 18 Z" fill="currentColor" opacity="0.6"/>
+        <path d="M16 18 V26 M16 26 L12 30 M16 26 L20 30 M16 24 L13 26" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span>The Root Collective</span>
+    </a>
+    <nav aria-label="Main">
+      <details class="nav-guides">
+        <summary>Guides</summary>
+        <div class="nav-menu">
+          <p class="nav-menu-title">Ways to grow</p>
+          <a href="water-jars.html">Water jars</a>
+          <a href="microgreens.html">Microgreens</a>
+          <a href="soil.html">Pots of soil</a>
+          <a href="bubble-bucket.html">Bubble buckets</a>
+          <p class="nav-menu-title">The basics</p>
+          <a href="seed-starting.html">Starting seeds</a>
+          <a href="lighting.html">Light</a>
+          <a href="ph.html">pH</a>
+          <a href="plant-food.html">Plant food</a>
+          <p class="nav-menu-title">Tools</p>
+          <a href="savings.html" aria-current="page">Savings calculator</a>
+          <a href="planner.html">Planting planner</a>
+        </div>
+      </details>
+      <a href="start-here.html">Start here</a>
+      <a href="community.html">Community</a>
+      <a class="nav-join" href="index.html#join">Join</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero hero-small">
+      <div class="hero-text">
+        <p class="eyebrow">Tool · Savings calculator</p>
+        <h1>What could growing it <em>yourself</em> save?</h1>
+        <p class="hero-lead">Tell us what you want to grow and how, put in what you pay at your store, and see roughly what growing it at home costs instead. Every number is yours to change.</p>
+      </div>
+    </section>
+
+    <section class="section calc-section">
+      <div class="calc-grid">
+        <div class="calc-card">
+          <div class="calc-step">
+            <label class="calc-q" for="crop"><span>1</span> What are you growing?</label>
+            <input id="crop" list="cropList" value="Lettuce" placeholder="For example: lettuce, basil, cherry tomatoes" autocomplete="off">
+            <datalist id="cropList">
+              <option value="Lettuce"><option value="Spinach"><option value="Kale"><option value="Bok choy">
+              <option value="Basil"><option value="Mint"><option value="Parsley"><option value="Cilantro">
+              <option value="Green onions"><option value="Chives"><option value="Microgreens">
+              <option value="Cherry tomatoes"><option value="Peppers"><option value="Strawberries">
+            </datalist>
+          </div>
+          <div class="calc-step">
+            <p class="calc-q" id="mLabel"><span>2</span> How will you grow it?</p>
+            <div class="calc-crops" role="group" aria-labelledby="mLabel">
+              <button type="button" data-m="jar" aria-pressed="true">Water jar</button>
+              <button type="button" data-m="soil" aria-pressed="false">Pot of soil</button>
+              <button type="button" data-m="bucket" aria-pressed="false">Bubble bucket</button>
+              <button type="button" data-m="tray" aria-pressed="false">Microgreens tray</button>
+            </div>
+            <p class="calc-match" id="matchNote" aria-live="polite"></p>
+          </div>
+
+          <p class="calc-group">At the store</p>
+          <p class="calc-sub" id="unitNote"></p>
+          <div class="calc-cur"><label for="cur">Currency symbol</label><input id="cur" value="$" maxlength="3"></div>
+          <div class="calc-field"><label for="price">Price you pay for one <span class="u"></span></label><input id="price" type="number" min="0" step="0.05" inputmode="decimal"></div>
+          <div class="calc-field"><label for="buy">How many you buy a month</label><input id="buy" type="number" min="0" step="1" inputmode="numeric"></div>
+
+          <p class="calc-group">Growing it at home</p>
+          <p class="calc-sub">Our rough estimates for what you picked. Change any number if you know better.</p>
+          <div class="calc-field"><label for="yield">Harvest from one setup<small>counted in store-sized <span class="u"></span>s</small></label><input id="yield" type="number" min="0.1" step="0.5" inputmode="decimal"></div>
+          <div class="calc-field"><label for="weeks">Weeks from start to harvest</label><input id="weeks" type="number" min="0.5" step="0.5" inputmode="decimal"></div>
+          <div class="calc-field"><label for="supplies">Supplies per harvest<small>seeds, plant food, growing medium</small></label><input id="supplies" type="number" min="0" step="0.05" inputmode="decimal"></div>
+          <div class="calc-field"><label for="setup">One-time setup cost<small>for one jar, tray, pot or bucket</small></label><input id="setup" type="number" min="0" step="1" inputmode="decimal"></div>
+
+          <label class="calc-toggle"><input type="checkbox" id="useLight"> I'm using a grow light (not just a window)</label>
+          <div id="lightFields" hidden>
+            <div class="calc-field"><label for="watts">Light power<small>in watts, written on the light</small></label><input id="watts" type="number" min="0" step="1" value="20" inputmode="numeric"></div>
+            <div class="calc-field"><label for="hours">Hours on per day</label><input id="hours" type="number" min="0" max="24" step="1" value="14" inputmode="numeric"></div>
+            <div class="calc-field"><label for="kwh">Electricity price per kWh<small>found on your power bill</small></label><input id="kwh" type="number" min="0" step="0.01" value="0.15" inputmode="decimal"></div>
+            <div class="calc-field"><label for="lightCost">Price of the light</label><input id="lightCost" type="number" min="0" step="1" value="30" inputmode="decimal"></div>
+          </div>
+        </div>
+
+        <div class="calc-out">
+          <div class="calc-result" aria-live="polite">
+            <p>You could save about</p>
+            <p class="calc-big" id="yearly"></p>
+            <p id="yearlyNote">a year</p>
+            <div class="calc-bars" aria-hidden="true">
+              <div class="calc-bar-row"><span>Store</span><div class="calc-bar"><span class="s" id="bStore"></span></div><span id="tStore"></span></div>
+              <div class="calc-bar-row"><span>Grow it</span><div class="calc-bar"><span class="g" id="bGrow"></span></div><span id="tGrow"></span></div>
+            </div>
+            <p class="calc-small">per month</p>
+          </div>
+          <div class="calc-stats">
+            <div class="calc-stat"><b id="setups"></b><span id="setupsLabel">setups to keep you supplied</span></div>
+            <div class="calc-stat"><b id="payback"></b><span>to pay back the setup cost</span></div>
+            <div class="calc-stat"><b id="energy"></b><span>electricity a month</span></div>
+            <div class="calc-stat"><b id="perUnit"></b><span>home-grown cost per <span class="u"></span></span></div>
+          </div>
+          <p class="grow-note">These are rough estimates to show the idea, not promises. Harvests vary with light, seeds and practice, and your first try may not go perfectly. The starting numbers are only examples, so change them to match what you see.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section narrow">
+      <aside class="before-box" aria-label="Where next">
+        <p class="before-title">Ready to try it?</p>
+        <p>Pick a way to grow. Each one has a step-by-step guide:</p>
+        <ul>
+          <li><a href="water-jars.html">Water jars</a><span>Great for lettuce. No pumps or power.</span></li>
+          <li><a href="microgreens.html">Microgreens</a><span>The fastest harvest, in about 1 to 3 weeks.</span></li>
+          <li><a href="soil.html">Pots of soil</a><span>Basil, green onions and more. Snip for months.</span></li>
+          <li><a href="bubble-bucket.html">Bubble buckets</a><span>The next step, for bigger plants.</span></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="section section-join">
+      <h2>Share your numbers.</h2>
+      <p>Join the Root Collective and tell us what you're saving, or what surprised you. Real numbers from real growers help everyone.</p>
+      <a class="button" href="index.html#join">Join us, it's free <span aria-hidden="true">→</span></a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-name">The Root Collective Project</p>
+    <p>Learn to grow food indoors, together.</p>
+    <p>Questions? <a class="footer-link" href="mailto:rootcollective.grow@gmail.com">rootcollective.grow@gmail.com</a></p>
+  </footer>
+
+  <script src="animations.js"></script>
+  <script src="calculator.js"></script>
+  <!-- Start each page at the top (helps when the site is shown inside a preview frame) -->
+  <script>if (!location.hash) { document.body.scrollIntoView({ block: 'start', behavior: 'instant' }); }</script>
+</body>
+</html>

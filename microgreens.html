@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grow microgreens on a windowsill · The Root Collective Project</title>
+  <meta name="description" content="A beginner's guide to growing microgreens indoors on a tray. Harvest in 1 to 3 weeks with a few dollars of supplies.">
+  <!-- Free fonts from Google: Fraunces (headings) and Inter (body text) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap">
+  <!-- SHARE: link previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Root Collective">
+  <meta property="og:title" content="Grow microgreens on a windowsill · The Root Collective Project">
+  <meta property="og:description" content="A beginner&#x27;s guide to growing microgreens indoors on a tray. Harvest in 1 to 3 weeks with a few dollars of supplies.">
+  <meta property="og:url" content="https://rootcollective-grow.github.io/microgreens.html">
+  <meta property="og:image" content="https://rootcollective-grow.github.io/images/hero-mg.jpg">
+  <meta property="og:image:alt" content="Grow microgreens on a windowsill · The Root Collective Project">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://rootcollective-grow.github.io/microgreens.html">
+  <!-- /SHARE -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">
+      <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 18 C16 10 10 6 4 6 C4 13 9 18 16 18 Z" fill="currentColor"/>
+        <path d="M16 18 C16 11 21 7 28 7 C28 14 23 18 16 18 Z" fill="currentColor" opacity="0.6"/>
+        <path d="M16 18 V26 M16 26 L12 30 M16 26 L20 30 M16 24 L13 26" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span>The Root Collective</span>
+    </a>
+    <nav aria-label="Main">
+      <details class="nav-guides">
+        <summary class="is-current">Guides</summary>
+        <div class="nav-menu">
+          <p class="nav-menu-title">Ways to grow</p>
+          <a href="water-jars.html">Water jars</a>
+          <a href="microgreens.html" aria-current="page">Microgreens</a>
+          <a href="soil.html">Pots of soil</a>
+          <a href="bubble-bucket.html">Bubble buckets</a>
+          <p class="nav-menu-title">The basics</p>
+          <a href="seed-starting.html">Starting seeds</a>
+          <a href="lighting.html">Light</a>
+          <a href="ph.html">pH</a>
+          <a href="plant-food.html">Plant food</a>
+          <p class="nav-menu-title">Tools</p>
+          <a href="savings.html">Savings calculator</a>
+          <a href="planner.html">Planting planner</a>
+        </div>
+      </details>
+      <a href="start-here.html">Start here</a>
+      <a href="community.html">Community</a>
+      <a class="nav-join" href="index.html#join">Join</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero hero-small hero-with-art">
+      <div class="hero-text">
+        <p class="eyebrow">Beginner guide · Microgreens</p>
+        <h1>Grow microgreens on a <em>windowsill.</em></h1>
+        <p class="hero-lead">The fastest harvest there is. Sow a tray of seeds, and in about 1 to 3 weeks you're cutting fresh greens for salads, sandwiches, and eggs.</p>
+      </div>
+      <div class="hero-plate">
+        <img class="hero-photo" src="images/hero-mg.jpg" width="1000" height="1000" alt="A shallow tray packed with bright green microgreens, ready to cut">
+      </div>
+    </section>
+
+    <!-- What microgreens are, in plain words -->
+    <section class="section narrow">
+      <p class="eyebrow"><span class="eyebrow-num">01</span> The idea</p>
+      <h2>What are microgreens?</h2>
+      <p>Microgreens are vegetable and herb seedlings that you cut and eat when they're just a few centimetres (an inch or two) tall, usually when their first leaves open. They taste like a stronger version of the grown-up plant: radish microgreens are peppery, pea shoots taste like fresh peas, and broccoli is mild and crunchy.</p>
+      <p>Because you harvest so young, the seed has most of the energy the plant needs. That means no plant food, no big setup, and very little that can go wrong. It's a great first project, or something to grow while you wait for a jar of lettuce.</p>
+      <p>Drag the slider to see a tray go from seeds to harvest.</p>
+      <!-- "Watch it grow" slider (moving parts in script.js) -->
+      <div class="grow-demo grow-demo-page" data-grow="mg">
+        <p class="grow-title">Watch it grow</p>
+        <img class="grow-photo" src="images/mg-day0.jpg" width="800" height="1000" alt="">
+        <label for="grow-mg" class="grow-label"><span class="grow-step"></span></label>
+        <input type="range" id="grow-mg" class="grow-range" min="0" max="5" step="1" value="0">
+        <p class="grow-text" aria-live="polite"></p>
+        <p class="grow-note">Times are rough and change with your seeds, light, and temperature.</p>
+      </div>
+      <aside class="before-box" aria-label="Before you start">
+        <p class="before-title">Before you start</p>
+        <p>No seed-starting or pH needed here. Just one basic:</p>
+        <ul>
+          <li><a href="lighting.html">Light made simple</a><span>Once uncovered, microgreens want 12 to 16 hours of light. Pale, leaning shoots mean they need more.</span></li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- Shopping list with tick boxes -->
+    <section class="section section-tinted">
+      <p class="eyebrow"><span class="eyebrow-num">02</span> Shopping list</p>
+      <h2>What you need</h2>
+      <p>Tick things off as you gather them.</p>
+      <ul class="supply-list">
+        <li>
+          <label><input type="checkbox"> <strong>A shallow tray</strong></label>
+          <p>About 3 to 5 cm (1 to 2 inches) deep, with drainage holes. <span class="diy">DIY:</span> a plastic takeout or berry container with holes poked in the bottom.</p>
+        </li>
+        <li>
+          <label><input type="checkbox"> <strong>A second tray with no holes</strong></label>
+          <p>This sits underneath to catch water, and lets you water from the bottom. <span class="diy">DIY:</span> a baking dish, plate, or the container's lid.</p>
+        </li>
+        <li>
+          <label><input type="checkbox"> <strong>Something to grow in</strong></label>
+          <p>Seed-starting mix or fine potting soil is easiest. Coco coir or a hemp grow mat also work if you'd rather skip the soil.</p>
+        </li>
+        <li>
+          <label><input type="checkbox"> <strong>Microgreen seeds</strong></label>
+          <p>Buy seeds sold for microgreens or sprouting. Regular garden seed packets are sometimes coated with chemicals that aren't meant to be eaten, and they work out expensive because you sow so many. Easy first picks: <strong>radish</strong>, <strong>broccoli</strong>, and <strong>peas</strong>.</p>
+        </li>
+        <li>
+          <label><input type="checkbox"> <strong>A spray bottle</strong></label>
+          <p>For gently misting the seeds in the first few days.</p>
+        </li>
+        <li>
+          <label><input type="checkbox"> <strong>Light</strong></label>
+          <p>A bright window works for much of the year. In winter, or if your window is dim, a small LED grow light helps a lot.</p>
+        </li>
+        <li>
+          <label><input type="checkbox"> <strong>Clean scissors</strong></label>
+          <p>For harvest day.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Step-by-step instructions -->
+    <section class="section narrow">
+      <p class="eyebrow"><span class="eyebrow-num">03</span> Method</p>
+      <h2>Step by step</h2>
+      <ol class="steps">
+        <li>
+          <h3>Soak big seeds (like peas)</h3>
+          <p>Large seeds like peas and sunflowers sprout better if you soak them in water for about 8 to 12 hours first. Small seeds like radish and broccoli go in dry.</p>
+        </li>
+        <li>
+          <h3>Fill the tray</h3>
+          <p>Add about 2.5 cm (1 inch) of growing mix, water it until it's evenly damp but not soggy, and press it flat with your hand or a small board.</p>
+        </li>
+        <li>
+          <h3>Sow thickly</h3>
+          <p>Sprinkle the seeds evenly over the whole surface, much closer together than you would in a garden. The seeds should almost touch, but not pile on top of each other. Press them down gently. There's no need to bury them.</p>
+        </li>
+        <li>
+          <h3>Mist and cover</h3>
+          <p>Mist the seeds well, then cover the tray to keep it dark and damp. An upside-down tray or a plate works. Mist once or twice a day.</p>
+        </li>
+        <li>
+          <h3>Uncover and give light</h3>
+          <p>After about 2 to 4 days, when most seeds have sprouted and the shoots are a couple of centimetres (about an inch) tall, take the cover off and move the tray into the light. Shoots that look pale or yellow at first turn green within a day or so. Aim for about 12 to 16 hours of light.</p>
+        </li>
+        <li>
+          <h3>Water from below</h3>
+          <p>From now on, pour water into the bottom tray instead of over the top, and let the soil soak it up. Keeping the leaves and stems dry helps stop mould. Water when the tray feels light or the surface looks dry.</p>
+        </li>
+        <li>
+          <h3>Harvest!</h3>
+          <p>Most microgreens are ready about 7 to 21 days after sowing, once their first leaves have opened. Radish is one of the quickest; peas take a bit longer. Cut just above the soil with scissors, rinse, and eat.</p>
+        </li>
+      </ol>
+      <p class="grow-note">Times are rough and change with your seeds, light, and temperature.</p>
+      <p>Most microgreens don't grow back after cutting. Pea shoots sometimes give a smaller second cut. Afterwards, the old roots and soil can go in your compost, and you can start a fresh tray. Many growers start a new tray every week so there's always something ready.</p>
+    </section>
+
+    <!-- Common problems -->
+    <section class="section section-tinted">
+      <p class="eyebrow"><span class="eyebrow-num">04</span> Troubleshooting</p>
+      <h2>If something looks wrong</h2>
+      <dl class="problems">
+        <dt>White fuzz near the roots</dt>
+        <dd>Usually this is just tiny root hairs, which are normal, especially on radish and broccoli. They disappear if you mist them. If the fuzz looks like grey cobwebs spreading over the seeds and smells musty, it's mould: water less, water from below, and give the tray more airflow (a small fan helps).</dd>
+        <dt>Seedlings falling over at the base</dt>
+        <dd>This is often from too much water and not enough air. Let the soil dry out a little between waterings and keep air moving.</dd>
+        <dt>Tall, floppy, pale seedlings</dt>
+        <dd>They're stretching for light. Move them closer to the window or grow light, or uncover them a little sooner next time.</dd>
+        <dt>Patchy sprouting</dt>
+        <dd>The seeds may have dried out, or they may be old. Keep them covered and misted until they sprout, and try fresher seeds.</dd>
+      </dl>
+    </section>
+
+    <section class="section section-join">
+      <h2>Share your first tray</h2>
+      <p>Join the Root Collective to swap tips, ask questions, and show off your harvest.</p>
+      <a class="button" href="index.html#join">Join us, it's free <span aria-hidden="true">→</span></a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-name">The Root Collective Project</p>
+    <p>Learn to grow food indoors, together.</p>
+    <p>Questions? <a class="footer-link" href="mailto:rootcollective.grow@gmail.com">rootcollective.grow@gmail.com</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="animations.js"></script>
+  <!-- Start each page at the top (helps when the site is shown inside a preview frame) -->
+  <script>if (!location.hash) { document.body.scrollIntoView({ block: 'start', behavior: 'instant' }); }</script>
+</body>
+</html>

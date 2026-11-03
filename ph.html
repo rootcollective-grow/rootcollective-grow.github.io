@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>pH made simple · The Root Collective Project</title>
+  <meta name="description" content="What pH is, why it matters for your plants, the right range for each way of growing, and how to test and adjust it.">
+  <!-- Free fonts from Google: Fraunces (headings) and Inter (body text) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap">
+  <!-- SHARE: link previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Root Collective">
+  <meta property="og:title" content="pH made simple · The Root Collective Project">
+  <meta property="og:description" content="What pH is, why it matters for your plants, the right range for each way of growing, and how to test and adjust it.">
+  <meta property="og:url" content="https://rootcollective-grow.github.io/ph.html">
+  <meta property="og:image" content="https://rootcollective-grow.github.io/images/hero-ph.jpg">
+  <meta property="og:image:alt" content="pH made simple · The Root Collective Project">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://rootcollective-grow.github.io/ph.html">
+  <!-- /SHARE -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">
+      <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 18 C16 10 10 6 4 6 C4 13 9 18 16 18 Z" fill="currentColor"/>
+        <path d="M16 18 C16 11 21 7 28 7 C28 14 23 18 16 18 Z" fill="currentColor" opacity="0.6"/>
+        <path d="M16 18 V26 M16 26 L12 30 M16 26 L20 30 M16 24 L13 26" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span>The Root Collective</span>
+    </a>
+    <nav aria-label="Main">
+      <details class="nav-guides">
+        <summary class="is-current">Guides</summary>
+        <div class="nav-menu">
+          <p class="nav-menu-title">Ways to grow</p>
+          <a href="water-jars.html">Water jars</a>
+          <a href="microgreens.html">Microgreens</a>
+          <a href="soil.html">Pots of soil</a>
+          <a href="bubble-bucket.html">Bubble buckets</a>
+          <p class="nav-menu-title">The basics</p>
+          <a href="seed-starting.html">Starting seeds</a>
+          <a href="lighting.html">Light</a>
+          <a href="ph.html" aria-current="page">pH</a>
+          <a href="plant-food.html">Plant food</a>
+          <p class="nav-menu-title">Tools</p>
+          <a href="savings.html">Savings calculator</a>
+          <a href="planner.html">Planting planner</a>
+        </div>
+      </details>
+      <a href="start-here.html">Start here</a>
+      <a href="community.html">Community</a>
+      <a class="nav-join" href="index.html#join">Join</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero hero-small hero-with-art">
+      <div class="hero-text">
+        <p class="eyebrow">Beginner guide · pH</p>
+        <h1>pH, made <em>simple.</em></h1>
+        <p class="hero-lead">pH sounds like chemistry class, but it comes down to one number and a few drops. Get it roughly right and your plants can actually use the food you give them.</p>
+      </div>
+      <div class="hero-plate">
+        <img class="hero-photo" src="images/hero-ph.jpg" width="1000" height="1000" alt="A glass jar of water next to a small test vial of yellow-green liquid, a dropper bottle, and a pH colour chart">
+      </div>
+    </section>
+
+    <!-- What pH is -->
+    <section class="section narrow">
+      <p class="eyebrow"><span class="eyebrow-num">01</span> The idea</p>
+      <h2>What pH is</h2>
+      <p>pH tells you how <strong>acidic</strong> or <strong>alkaline</strong> something is, on a scale from 0 to 14. Seven is neutral, like pure water. Lower numbers are acidic, like lemon juice or vinegar. Higher numbers are alkaline, like baking soda.</p>
+
+      <figure class="ph-scale" aria-label="The pH scale from 0 to 14">
+        <div class="ph-bar" aria-hidden="true">
+          <span class="ph-zone ph-zone-water" style="left: calc(5.5 / 14 * 100%); width: calc(1 / 14 * 100%);"></span>
+          <span class="ph-zone ph-zone-soil" style="left: calc(6 / 14 * 100%); width: calc(1 / 14 * 100%);"></span>
+        </div>
+        <div class="ph-ticks" aria-hidden="true"><span>0</span><span>7</span><span>14</span></div>
+        <div class="ph-ends" aria-hidden="true"><span>Acidic</span><span>Neutral</span><span>Alkaline</span></div>
+        <figcaption>
+          <span class="ph-key ph-key-water"></span> Water methods: 5.5 to 6.5
+          <span class="ph-key ph-key-soil"></span> Soil: 6.0 to 7.0
+        </figcaption>
+      </figure>
+
+      <p><strong>Why it matters:</strong> plants can only take up their food when the pH is in the right range. If it drifts too far, the food is still in the water, but the roots can't use it. This is called <strong>nutrient lockout</strong>, and it often shows up as pale or yellow leaves.</p>
+      <p>The good news: plants don't need it perfect. Anywhere inside the range is fine.</p>
+    </section>
+
+    <!-- Ranges by method -->
+    <section class="section section-tinted">
+      <p class="eyebrow"><span class="eyebrow-num">02</span> Target ranges</p>
+      <h2>The right pH for each way to grow</h2>
+      <div class="ph-table-wrap">
+        <table class="ph-table">
+          <thead><tr><th scope="col">Way to grow</th><th scope="col">Aim for</th><th scope="col">Do you need to test?</th></tr></thead>
+          <tbody>
+            <tr><th scope="row"><a href="water-jars.html">Water jars</a></th><td>5.5 to 6.5</td><td>Helpful. Test once when you mix the water.</td></tr>
+            <tr><th scope="row"><a href="bubble-bucket.html">Bubble buckets</a></th><td>5.5 to 6.5</td><td>Yes. Check at least once a week, because it drifts.</td></tr>
+            <tr><th scope="row"><a href="soil.html">Pots of soil</a></th><td>6.0 to 7.0</td><td>Rarely. Bagged potting mix is usually already in range.</td></tr>
+            <tr><th scope="row"><a href="microgreens.html">Microgreens</a></th><td>No need</td><td>No. They're harvested before pH makes a difference.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="grow-note">Water methods sit a little lower than soil because there's no soil to buffer (steady) the pH.</p>
+    </section>
+
+    <!-- Plant chart -->
+    <section class="section narrow">
+      <p class="eyebrow"><span class="eyebrow-num">03</span> Plant chart</p>
+      <h2>Common plants in water</h2>
+      <p>Most food plants are happy around 6.0, so if you're growing a mix in water, aim for that. For one plant on its own:</p>
+      <div class="ph-table-wrap">
+        <table class="ph-table">
+          <thead><tr><th scope="col">Plants</th><th scope="col">Aim for</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Lettuce, kale, bok choy</th><td>5.5 to 6.5</td></tr>
+            <tr><th scope="row">Basil, mint, parsley</th><td>5.5 to 6.5</td></tr>
+            <tr><th scope="row">Green onions, chives</th><td>6.0 to 7.0</td></tr>
+            <tr><th scope="row">Spinach</th><td>6.0 to 7.0</td></tr>
+            <tr><th scope="row">Tomatoes</th><td>5.5 to 6.5</td></tr>
+            <tr><th scope="row">Peppers, cucumbers</th><td>5.8 to 6.5</td></tr>
+            <tr><th scope="row">Strawberries</th><td>5.5 to 6.2</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="grow-note">Different sources give slightly different numbers. These are common middle-of-the-road ranges.</p>
+    </section>
+
+    <!-- How to test and adjust -->
+    <section class="section section-tinted">
+      <p class="eyebrow"><span class="eyebrow-num">04</span> Method</p>
+      <h2>How to test and adjust</h2>
+      <ol class="steps">
+        <li>
+          <h3>Mix in the plant food first</h3>
+          <p>Plant food changes the pH, so always test after it's mixed in, not before (our <a href="plant-food.html">plant food guide</a> shows how to mix it). Tap water on its own is often around 7 to 8.</p>
+        </li>
+        <li>
+          <h3>Test a small sample</h3>
+          <p><strong>Test drops</strong> (the cheapest): put a little water in the test tube, add the drops, and match the colour to the chart. <strong>A digital pen</strong>: dip it in and read the number. Now and then, pens need calibrating, which means resetting them with the test liquid they come with so they read correctly.</p>
+        </li>
+        <li>
+          <h3>Too high? Add "pH down"</h3>
+          <p>Add a few drops, stir well, wait a minute, and test again. Go slowly, because a little goes a long way, especially in a small jar.</p>
+        </li>
+        <li>
+          <h3>Too low? Add "pH up"</h3>
+          <p>This is less common. Same idea: a few drops, stir, wait, and test again.</p>
+        </li>
+        <li>
+          <h3>Don't chase tiny changes</h3>
+          <p>If it's inside the range, leave it. Moving it back and forth stresses plants more than a small drift does.</p>
+        </li>
+      </ol>
+      <ul class="safety-list">
+        <li><strong>Handle pH up and down with care.</strong> They're strong acids and bases. Keep them away from kids and pets, wear gloves, and rinse your skin with water if you spill any. Never pour the two straight into each other.</li>
+      </ul>
+    </section>
+
+    <!-- Common problems -->
+    <section class="section narrow">
+      <p class="eyebrow"><span class="eyebrow-num">05</span> Troubleshooting</p>
+      <h2>If something looks wrong</h2>
+      <dl class="problems">
+        <dt>Pale or yellow leaves, even though you fed them</dt>
+        <dd>Check the pH first. If it's out of range, adjust it. If it's fine, the plant may just need fresh nutrient water.</dd>
+        <dt>The pH keeps creeping up in a bucket</dt>
+        <dd>That's normal as plants feed. Bring it back down when it leaves the range, and change the water every couple of weeks.</dd>
+        <dt>The pen gives a different number every time</dt>
+        <dd>It probably needs calibrating, or a rinse. Rinse the tip with clean water between tests and keep it in the storage liquid it came with, so it doesn't dry out.</dd>
+        <dt>Test drops are hard to read</dt>
+        <dd>Hold the tube against a white sheet of paper in daylight. If the colour sits between two on the chart, go with the middle.</dd>
+      </dl>
+    </section>
+
+    <!-- Where to go next -->
+    <section class="section narrow">
+      <aside class="before-box" aria-label="Where next">
+        <p class="before-title">Where next?</p>
+        <p>Ready to put it to use? Pick a way to grow:</p>
+        <ul>
+          <li><a href="water-jars.html">Water jars</a><span>The simplest water method. No pumps or power.</span></li>
+          <li><a href="soil.html">Pots of soil</a><span>The most familiar way, and it works for lots of plants.</span></li>
+          <li><a href="bubble-bucket.html">Bubble buckets</a><span>The next step up, for bigger plants.</span></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="section section-join">
+      <h2>Stuck on a reading?</h2>
+      <p>Join the Root Collective and post your numbers. Someone will help you work it out.</p>
+      <a class="button" href="index.html#join">Join us, it's free <span aria-hidden="true">→</span></a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-name">The Root Collective Project</p>
+    <p>Learn to grow food indoors, together.</p>
+    <p>Questions? <a class="footer-link" href="mailto:rootcollective.grow@gmail.com">rootcollective.grow@gmail.com</a></p>
+  </footer>
+
+  <script src="animations.js"></script>
+  <!-- Start each page at the top (helps when the site is shown inside a preview frame) -->
+  <script>if (!location.hash) { document.body.scrollIntoView({ block: 'start', behavior: 'instant' }); }</script>
+</body>
+</html>
